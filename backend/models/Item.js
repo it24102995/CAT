@@ -17,6 +17,11 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Price is required"],
       min: [0, "Price cannot be negative"],
     },
+    materialtype: {
+      type: String,
+      required: [true, "Material type is required"],
+      trim: true,
+    },
     description: {
       type: String,
       required: [true, "Description is required"],
